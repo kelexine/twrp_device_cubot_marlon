@@ -11,25 +11,26 @@
 |Android Version     |11 (AOSP)                                               |
 |Storage             |128GB                                                      |
 
-Blocking checks
+### Blocking checks
 - [X] Correct screen/recovery size
 - [X] Working Touch, screen
 - [X] Backup to internal/microSD
 - [X] Restore from internal/microSD
 - [X] reboot to system
 - [X] ADB
-Medium checks
+
+### Medium checks
 - [X] update.zip sideload
 - [X] UI colors (red/blue inversions)
 - [X] Screen goes off and on
-- [X] F2FS/EXT4 Support, exFAT/NTFS where supported
+- [X] EXT4 Support, exFAT/NTFS where supported
 - [X] all important partitions listed in mount/backup lists
 - [X] backup/restore to/from external (USB-OTG) storage (mouse and keyboard works)
 - [X] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
 - [X] decrypt /data (FBE, TrustKernel TEE)
 - [X] Correct date
 
-Minor checks
+### Minor checks
 - [X] MTP export
 - [X] reboot to bootloader
 - [X] reboot to recovery
