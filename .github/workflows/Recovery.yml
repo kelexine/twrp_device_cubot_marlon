@@ -156,9 +156,11 @@ jobs:
 
       - name: Compile Recovery Image
         run: |
-          source build/envsetup.sh
           export ALLOW_MISSING_DEPENDENCIES=true
           export LC_ALL="C"
+          set +e
+          source build/envsetup.sh
+          set -e
           lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng
           make clean
           mka ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
