@@ -177,7 +177,6 @@ jobs:
       - name: Compile Recovery Image
         run: |
           export ALLOW_MISSING_DEPENDENCIES=true
-          export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
           export LC_ALL="C"
           set +e
           source build/envsetup.sh
