@@ -19,6 +19,9 @@ $(call inherit-product, device/cubot/marlon/device.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Sign recovery and include ROM release OTA keys when staged
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
+
 PRODUCT_DEVICE := marlon
 PRODUCT_NAME := twrp_marlon
 PRODUCT_BRAND := CUBOT

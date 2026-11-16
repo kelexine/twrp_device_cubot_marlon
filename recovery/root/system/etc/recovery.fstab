@@ -1,5 +1,8 @@
+system                                     		/system                erofs               ro wait,logical
 system                                     		/system                ext4                ro wait,logical
+vendor                                     		/vendor                erofs               ro wait,logical
 vendor                                     		/vendor                ext4                ro wait,logical
+product                                    		/product               erofs               ro wait,logical
 product                                    		/product               ext4                ro wait,logical
 
 /dev/block/platform/bootdevice/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
