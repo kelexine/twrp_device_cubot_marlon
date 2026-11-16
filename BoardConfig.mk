@@ -202,6 +202,7 @@ TW_NO_USB_STORAGE := true
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := en
 TW_INCLUDE_RESETPROP := true
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.release;ro.build.id;ro.build.tags;ro.build.version.incremental;ro.build.date.utc"
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_HAS_MTP := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
